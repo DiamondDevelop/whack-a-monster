@@ -123,6 +123,12 @@ function gameOver() {
 * to call `showAndHide(hole, delay)`.
 *
 */
+function showAndHide(hole, delay) {
+  let timeoutID = setTimeout(() => {
+    hidePreviousHole(previousHole); 
+    toggleVisibility(hole);
+
+
 function showUp() {
   let delay = 0; // TODO: Update so that it uses setDelay()
   const hole = 0;  // TODO: Update so that it use chooseHole()
