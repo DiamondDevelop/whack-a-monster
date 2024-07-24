@@ -54,7 +54,7 @@ function setDelay(difficulty) {
       timeDelay = 200;
     }
   } catch (error){
-    console.log("error: difficulty not set", error);
+    console.log("error: please choose difficulty level", error);
   }
   return timeDelay;
 }
@@ -129,18 +129,12 @@ return gameStopped;
 * to call `showAndHide(hole, delay)`.
 *
 */
-function showAndHide(hole, delay) {
-  let timeoutID = setTimeout(() => {
-    hidePreviousHole(previousHole); 
-    toggleVisibility(hole);
-
 
 function showUp() {
   let delay = setDelay(difficulty); // TODO: Update so that it uses setDelay()
   const hole = chooseHole(holes);  // TODO: Update so that it use chooseHole()
   return showAndHide(hole, delay);
 }
-
 /**
 *
 * The purpose of this function is to show and hide the mole given
@@ -149,14 +143,12 @@ function showUp() {
 * the timeoutID
 *
 */
-function showAndHide(hole, delay){
-  // TODO: call the toggleVisibility function so that it adds the 'show' class.
-  
-  const timeoutID = setTimeout(() => {
-    // TODO: call the toggleVisibility function so that it removes the 'show' class when the timer times out.
-    
+function showAndHide(hole, delay) {
+  let timeoutID = setTimeout(() => {
+    toggleVisibility(hole);
     gameOver();
-  }, 0); // TODO: change the setTimeout delay to the one provided as a parameter
+  }, delay);
+
   return timeoutID;
 }
 
@@ -281,8 +273,8 @@ function stopGame(){
 *
 */
 function startGame(){
-  //setDuration(10);
-  //showUp();
+  setDuration(10);
+  showUp();
   return "game started";
 }
 
