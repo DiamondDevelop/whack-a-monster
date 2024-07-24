@@ -1,6 +1,6 @@
-const holes = document.querySelectorAll('.hole');
-const moles = document.querySelectorAll('.mole');
-const startButton = document.querySelector('#start');
+const holes = document.querySelectorAll(".hole");
+const moles = document.querySelectorAll(".mole");
+const startButton = document.querySelector("#start");
 // Added the missing query selectors:
 const score = document.querySelector("#score"); // Use querySelector() to get the score element
 const timerDisplay = document.querySelector("#timer"); // use querySelector() to get the timer element.
@@ -9,7 +9,7 @@ let time = 0;
 let timer;
 let lastHole = 0;
 let points = 0;
-let difficulty = "hard";
+let difficulty ="normal"
 
 /**
  * Generates a random integer within a range.
@@ -20,9 +20,9 @@ let difficulty = "hard";
  * will return a random integer between 10 and 200.
  *
  */
+
 function randomInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
-
 }
 
 /**
@@ -42,22 +42,14 @@ function randomInteger(min, max) {
  */
 function setDelay(difficulty) {
   // my code here.
-  try {
     if (difficulty === "easy") {
-      timeDelay = 1500;
+      return 1500;
     } else if (difficulty === "normal"){
-     timeDelay = 1000;
+     return 1000;
     } else if (difficulty === "hard"){
-    const randNum = Math.floor(Math.random() * (1200 - 600 + 1)) + 600;
-    timeDelay = randNum;      
-    } else {
-      timeDelay = 200;
-    }
-  } catch (error){
-    console.log("error: please choose difficulty level", error);
+      return randomInteger(600, 1200); 
+   }
   }
-  return timeDelay;
-}
 
 /**
  * Chooses a random hole from a list of holes.
@@ -71,15 +63,12 @@ function setDelay(difficulty) {
  *
  * Example: 
  * const holes = document.querySelectorAll('.hole');
- * chooseHole(holes) //> returns one of the 9 holes that you defined
- */
-//0-8 Random number generator 
-const randNum = (min, max) => Math.floor(Math.random() * (max - min + 1));
+ * chooseHole(holes) //> returns one of the 9 holes that you defined */
 
 function chooseHole(holes) {
   // my code here.
   //gets hole at index of random number
-  const index = randNum(0, 8);
+  const index = randomInteger(0, 8);
   const hole = holes[index];
   // if hole index matches previous hole, choose different hole.
  if (hole === lastHole) {
@@ -115,7 +104,7 @@ function gameOver() {
   timeoutId = showUp();
   return timeoutId;
   }else{
-  gameStopped = stopGame();
+  let gameStopped = stopGame();
 return gameStopped;
  }
 }
@@ -216,8 +205,8 @@ function updateTimer() {
 *
 */
 function startTimer() {
-  // TODO: Write your code here
-  // timer = setInterval(updateTimer, 1000);
+  // my code here
+  timer = setInterval(updateTimer, 1000);
   return timer;
 }
 
@@ -231,6 +220,7 @@ function startTimer() {
 */
 function whack(event) {
   // my code here.
+  setEventListeners();
   updateScore();
   return points;
 }
@@ -242,9 +232,7 @@ function whack(event) {
 */
 function setEventListeners(){
   // my code here
-  moles.forEach(
-    mole => mole.addEventListener('click', whack)
-  );
+  moles.forEach((mole) => mole.addEventListener("click", whack));
   return moles;
 }
 
@@ -278,7 +266,10 @@ function stopGame(){
 *
 */
 function startGame(){
+  setEventListeners();
+  startTimer();
   setDuration(10);
+  clearScore();
   showUp();
   return "game started";
 }
