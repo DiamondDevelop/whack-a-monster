@@ -82,7 +82,11 @@ function chooseHole(holes) {
   const index = randNum(0, 8);
   const hole = holes[index];
   // if hole index matches previous hole, choose different hole.
-
+ if (hole === lastHole) {
+  return chooseHole(holes); 
+}
+lastHole = hole;
+return hole;
 }
 
 /**
