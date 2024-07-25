@@ -76,6 +76,10 @@ h2 {
   pointer-events:auto;
 }
 
+.hole.show {
+  z-index: 2;
+}
+
 .hole.show .mole {
   top: 0;
   /*transform: scale(1.1);*/
