@@ -101,7 +101,7 @@ return hole;
 function gameOver() {
   // my code here
   if (time > 0){
-  timeoutId = showUp();
+  let timeoutId = showUp();
   return timeoutId;
   }else{
   let gameStopped = stopGame();
