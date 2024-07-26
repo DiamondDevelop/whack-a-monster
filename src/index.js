@@ -2,6 +2,7 @@
 const holes = document.querySelectorAll('.hole');
 const moles = document.querySelectorAll('.mole');
 const startButton = document.querySelector('#start');
+const audio = document.getElementById("audio");
 // Added the missing query selectors:
 const score = document.querySelector("#score"); // Use querySelector() to get the score element
 const timerDisplay = document.querySelector("#timer"); // use querySelector() to get the timer element.
@@ -11,6 +12,12 @@ let timer;
 let lastHole = 0;
 let points = 0;
 let difficulty ="hard"
+
+
+function playAudioOnce() {
+  audio.play();
+  audio.removeEventListener("canplay", playAudioOnce);
+}
 
 /**
  * Generates a random integer within a range.
@@ -223,6 +230,7 @@ function whack(event) {
   // my code here.
   setEventListeners();
   updateScore();
+  playHitSound(); // Play the "hit" sound when a mole is clicked
   return points;
 }
 
@@ -255,10 +263,17 @@ function setDuration(duration) {
 *
 */
 function stopGame(){
-  // stopAudio(song);  //optional
+  //stopAudio();  //optional
   clearInterval(timer);
   return "game stopped";
 }
+
+// adds 'hit' when attempt to return mo-02 to safety hole
+function playHitSound() {
+  const hitSound = new Audio('assets/hit.mp3');
+  hitSound.play();
+}
+
 
 /**
 *
@@ -269,9 +284,10 @@ function stopGame(){
 function startGame(){
   setEventListeners();
   startTimer();
-  setDuration(10);
+  setDuration(25);
   clearScore();
   showUp();
+  document.documentElement.classList.add("show-radio-mallet-cursor");
   return "game started";
 }
 
