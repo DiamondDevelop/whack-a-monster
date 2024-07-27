@@ -109,7 +109,7 @@ function gameOver() {
   }else{
   let gameStopped = stopGame();
 return gameStopped;
- }
+  }
 }
 
 /**
