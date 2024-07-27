@@ -2,7 +2,6 @@
 const holes = document.querySelectorAll('.hole');
 const moles = document.querySelectorAll('.mole');
 const startButton = document.querySelector('#start');
-const audio = document.getElementById("audio");
 // Added the missing query selectors:
 const score = document.querySelector("#score"); // Use querySelector() to get the score element
 const timerDisplay = document.querySelector("#timer"); // use querySelector() to get the timer element.
@@ -14,10 +13,6 @@ let points = 0;
 let difficulty ="hard"
 
 
-function playAudioOnce() {
-  audio.play();
-  audio.removeEventListener("canplay", playAudioOnce);
-}
 
 /**
  * Generates a random integer within a range.
@@ -274,6 +269,10 @@ function playHitSound() {
   hitSound.play();
 }
 
+// adding function to play mole song
+document.getElementById('start').addEventListener('click', function() {
+  document.getElementById('molesong').play();
+});
 
 /**
 *
