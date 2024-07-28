@@ -1,86 +1,67 @@
-# Whack-a-Mole!
+# Whack-a-Monster!
 
 A local game development studio has decided to create a new game that's based on Whack-A-Mole. If you've ever been to an arcade, you have probably seen or played Whack-A-Mole. It's a game in which a player uses a mallet to hit toy moles, which appear at random, back into their holes.
 
-The game designers have asked you to come up with a computer version of this game. They have provided some source code, but it still needs to be completed. You are encouraged to come up with an original visual design for this game or even change the theme. The game designers expect you to use the JavaScript, HTML, and CSS skills that you've learned in this program to give the game a unique feel.
+The game designers have asked me to come up with a computer version of this game. They have provided some source code, but it still needed to be completed. 
+I came up with an original visual design for this game.
+This code uses: JavaScript, HTML, and CSS skills that I've learned in my Web Development program to give the game a unique feel.
 
-![whackamole](https://github.com/gabrielsanchez/erddiagram/blob/main/whackamole.gif?raw=true)
+![readme](https://github.com/user-attachments/assets/a3f2bf8d-4e76-4e54-961e-f0828c09a082)
 
-## Steps to complete
 
-To complete this project, you must do the following:
+## Steps complete
 
-- Write code that passes all of the requirements in the project rubric, and submit your GitHub link to the Thinkful team.
+Implemented the following:
 
-Go ahead and get started by following the installation steps below. You'll submit your project to the Thinkful team when you are finished.
-
-# Installation
-
-1. Fork and clone this repository.
-2. Navigate to the project's folder.
-3. Run `npm install` to install.
-4. To run the unit tests, run `npm test`.
-
-**Note:** It's not required to pass all the unit tests to complete this assignment but it is recommended that you use the tests to deliver a functional game and meet the rubric requirements.
+- Wrote code that passes all of the requirements in the project rubric, [Original](https://github.com/Thinkful-Ed/js-dev-final-capstone-starter-whack-a-mole)
 
 # Existing files
 
 |Folder/file path	|Description|
 |------|-----|
-| `index.html` |	The HTML document that holds the game structure. You will need to modify this file so that the tests pass. |
-| `src/styles.css` |	The CSS file that holds the styling of the game. You don't need to modify this file for the tests to pass, but you may want to make optional changes to the file to change the appearance.|
-| `src/index.js` | The JS file that holds the functionality of the game. You will need to change this file for the tests to pass. |
+| `index.html` |	The HTML document that holds the game structure. Modified this file so that the tests pass. |
+| `src/styles.css` |	The CSS file that holds the styling of the game. Made optional changes to the file to change the appearance.|
+| `src/index.js` | The JS file that holds the functionality of the game. Changed this file for the tests to pass. |
 | `test/solution.test.js` | This file holds the unit tests of the game.|
 
 ### Reminder: Secure your progress with regular commits
 
-As you work on this project, let's not forget the golden rule of coding: **commit early, commit often**. Each commit acts as a snapshot of your progress, safeguarding your work against unexpected issues and showcasing your methodical approach to problem-solving.
+As I worked on this project, I did not forget the golden rule of coding: **commit early, commit often**. Each commit acts as a snapshot of my progress, safeguarding my work against unexpected issues and showcasing my methodical approach to problem-solving.
 
-- **Feature complete?** Commit it.
-- **Made noticeable progress?** Commit it.
-- **Project stretching over days or weeks?** That's even more reason to commit regularly.
+- **Feature complete?** Commited it.
+- **Made noticeable progress?** Commited it.
+- **Project stretching over days or weeks?** That's even more reason I commit regularly.
 
-By committing after completing features or making significant progress, you ensure that your GitHub timeline reflects the depth and breadth of your work. This habit is invaluable, not just for keeping your work secure, but also for demonstrating your dedication and reliability to future employers. It's a practice that sets you apart in the tech world.
-
-So, as you embark on this project, take a moment to review your commit history. Is it a true reflection of your effort and progress? If not, now's the time to update it. Your future self, tackling complex projects and your future employer, assessing your potential, will thank you for this discipline. You're welcome to commit as often as you like.
-
-If you're unsure about uploading your work, revisit the *Pushing and Pulling* lesson in the *Git & GitHub* module.
-
-### No AI Assistance
-
-For your final capstone project, it's crucial that you work independently and refrain from using AI tools like SkillMate or ChatGPT. This approach is vital for a number of reasons: it nurtures essential critical thinking and problem-solving skills, which are crucial for grasping complex concepts; it prepares you for live coding challenges in technical interviews; it equips you to handle unique professional scenarios where AI tools may not be available; and it guarantees that the assessments genuinely represent your skill level.
-
-While AI tools are beneficial for practice, they should not substitute your effort in assessments. We trust in your commitment to honesty and self-improvement and wish you the best in your learning journey.
+By committing after completing features or making significant progress, I ensured that my GitHub timeline reflects the depth and breadth of my work. This habit is invaluable, not just for keeping my work secure, but also for demonstrating my dedication and reliability to future employers. It's a practice that sets me apart in the tech world.
 
 # User Stories
 
-User stories aren't just tasks; they're your training ground for real-world software engineering. As you work through them:
+User stories aren't just tasks; they're my training ground for real-world software engineering. As I worked through them:
 
-1. **Interpreting requirements**: You'll learn to translate user needs into technical features, a key skill in software development.
+1. **Interpreting requirements**: I've learned to translate user needs into technical features, a key skill in software development.
   
-2. **Prioritization**: Tackling stories in order simulates real project timelines and teaches you to build features systematically.
+2. **Prioritization**: Tackling stories in order simulates real project timelines and taught me to build features systematically.
 
 3. **Problem-solving**: Trying to solve challenges independently before seeking help mirrors the self-sufficiency expected in professional roles.
 
-4. **Meeting standards**: Adhering to acceptance criteria parallels quality assurance practices, ensuring your work meets user expectations.
+4. **Meeting standards**: Adhering to acceptance criteria parallels quality assurance practices, ensuring my work meets user expectations.
 
-5. **Effective communication**: Documenting your progress and marking TODOs in code improves clarity and teamwork, crucial in collaborative environments.
+5. **Effective communication**: Documenting my progress and marking TODOs in code improves clarity and teamwork, crucial in collaborative environments.
 
-6. **Adaptability**: Facing and overcoming obstacles enhances your adaptability and promotes continuous learning, essential in the ever-evolving tech landscape.
+6. **Adaptability**: Facing and overcoming obstacles enhanced my adaptability and promotes continuous learning, essential in the ever-evolving tech landscape.
 
-Each story you complete is a step towards job readiness, embodying the skills and mindset sought after by employers in the tech industry.
+Each story I completed is a step towards job readiness, embodying the skills and mindset sought after by employers in the tech industry.
 
-Your work should meet the functionality as described in the *acceptance criteria* of each user story. Find the *TODO* comments in the code and create the necessary functionality. Try to implement the functionality by yourself and check the hints and REPLs are provided for you if you get stuck.
+My work meets the functionality as described in the *acceptance criteria* of each user story. Find the *TODO* comments in the code and create the necessary functionality.
 
-Good luck - you can do this!
 
 ## US-01 - Basic game structure
 
-The game needs to have the basic structure for it to function. The game will need a name, some basic board controls such as a start button, a score, and a timer display. The game needs nine holes and moles defined.
+The game has the basic structure for it to function. The game has a name, some basic board controls such as a start button, a score, and a timer display. The game has nine holes and moles defined.
 
 #### 1. Add a title to the game, surrounded by `h1` tags.
 
-You need to name your game. The default is `whack-a-mole`, but you can choose another name depending on the theme that you want to set for the game. Some variations could be `whack-a-virus`, `catch-a-cat`, or something else. Surround your title in `h1` tags. Besides naming your game, you will also need to assign an `id` attribute to the `h1` tag and set the `id` attribute's value to a string of `"title"` for the test to pass. It should look something like this:
+Added the name 'whack-a-monster'. Surrounded my title in `h1` tags. Assigned an `id` attribute to the `h1` tag and set the `id` attribute's value to a string of `"title"` for the test to pass. It should look something like this:
 
 ```html
 <h1 id="title"> My game!! </h1>
@@ -88,7 +69,7 @@ You need to name your game. The default is `whack-a-mole`, but you can choose an
 
 #### 2. Add nine holes and moles to the grid in `index.html`
 
-The `index.html` file  has only two holes defined. The game should have up to nine holes defined. Add the missing holes and moles to the HTML file.
+The `index.html` file  has only two holes defined. The game should have up to nine holes defined. Added the missing holes and moles to the HTML file.
 
 ```html
     <div class="grid">
@@ -105,7 +86,7 @@ The `index.html` file  has only two holes defined. The game should have up to ni
 
 #### 3. Define a `start` button in `index.html`
 
-The game needs a `start` button so that a player can start playing the game. Use a `button` tag with `start` set as the `id`.
+The game needs a `start` button so that a player can start playing the game. Added a `button` tag with `start` set as the `id`.
 
 ```html
 <button id="start">start</button>
@@ -113,7 +94,7 @@ The game needs a `start` button so that a player can start playing the game. Use
 
 #### 4. Use `querySelector()` or `querySelectorAll()` to access the elements in `index.js`
 
-Great! You have defined most of the HTML structure! Now you need to make sure that you can access the elements in JavaScript. Go to `src/index.js` and take some time to analyze the query selectors. You should see something like this:
+I have defined most of the HTML structure! Access the elements in JavaScript. Go to `src/index.js` and take some time to analyze the query selectors. You should see something like this:
 
 ```js
 const holes = document.querySelectorAll('.hole');
@@ -126,10 +107,6 @@ const timerDisplay; // use querySelector() to get the timer element.
 
 Use `querySelector()` to get the missing `score` and `timer` elements.
 
-**Hint:** Review the _Selecting elements on the DOM_ lesson from the _JavaScript and the DOM_ module if you don't remember how to use query selectors. You can also consult the [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
-
-**Commit your code**: If you've made notable progress, now might be a good time to make a commit to secure your progress.
-
 #### Acceptance criteria
 
 1. The title is surrounded by `h1` tags and has `title` set as `id`.
@@ -139,35 +116,32 @@ Use `querySelector()` to get the missing `score` and `timer` elements.
 
 ## US-02 - Basic game functionality: Randomness
 
-Good job! You have the HTML of your game all set up. Now, it's time to implement some of the game functionality in JavaScript. The moles (or other chosen entity) need to appear and disappear randomly.
+The HTML of my game all set up. Now, it's time to implement some of the game functionality in JavaScript. The moles (or other chosen entity) need to appear and disappear randomly.
 
 #### 1. `randomInteger(min, max)`
 
 The function takes two values as parameters to limit the range of the number to be generated. For example, calling `randomInteger(0,10)` will return a random integer between 0 and 10. Calling `randomInteger(10,200)` will return a random integer between 10 and 200.
-
-Study [this example](https://replit.com/@thinkful/randomInteger#index.js) and implement the `randomInteger(min, max)` function in `index.js`. 
  
-_**Note:** This function is already implemented for you. You only need to study the REPL and use the code provided._
+_**Note:** This function is already implemented for me.
 
 #### 2. `setDelay(difficulty)`
-Implement the `setDelay(difficulty)` function. The moles need to appear and disappear at a certain interval of time.  The function takes a `difficulty` parameter that can have three values: `easy`, `normal`, or `hard`. If difficulty is `easy`, then the function returns a time delay of 1,500 milliseconds (or 1.5 seconds). If the difficulty is set to `normal`, it should return 1,000. If difficulty is set to `hard`, it should return a `randomInteger` between 600 and 1,200.
+Implemented the `setDelay(difficulty)` function. The moles need to appear and disappear at a certain interval of time.  The function takes a `difficulty` parameter that can have three values: `easy`, `normal`, or `hard`. If difficulty is `easy`, then the function returns a time delay of 1,500 milliseconds (or 1.5 seconds). If the difficulty is set to `normal`, it should return 1,000. If difficulty is set to `hard`, it should return a `randomInteger` between 600 and 1,200.
 
 ```js
 setDelay("easy") //> Returns 1500
 setDelay("normal") //> Returns 1000
 setDelay("hard") //> Returns 856 (returns a random number between 600 and 1200).
 ```
-**Hint:** Study the _Control flow_ lesson if you need to review `if`/`else` statements.
 
 #### 3. `chooseHole(holes)`
- Implement the `chooseHole(holes)` function. This function should select a random hole from the list of holes that you defined. When you call the function, you should make sure that it doesn't return the last hole.
+ Implemented the `chooseHole(holes)` function. This function should select a random hole from the list of holes that you defined. When function is called, it ensures it doesn't return the last hole.
  
  ```js
  const holes = document.querySelectorAll('.hole');
  chooseHole(holes) //> Returns one of the 9 holes that you defined
  ```
  
- Feel free to use the following pseudocode as a guide for your implementation.
+ Used the following pseudocode as a guide for my implementation.
  
  ```
  function chooseHole(holes){
@@ -178,10 +152,6 @@ setDelay("hard") //> Returns 856 (returns a random number between 600 and 1200).
  }
  ```
 
-**Hint:**  If you get stuck, study [this REPL](https://replit.com/@thinkful/chooseHole#script.js).
-
-**Commit your code**: If you've made notable progress, now might be a good time to make a commit to secure your progress.
-
 #### Acceptance criteria
 
 1. The `randomInteger()` function works as expected.
@@ -191,13 +161,13 @@ setDelay("hard") //> Returns 856 (returns a random number between 600 and 1200).
 
 ## US-03 - Game flow
 
-In the previous user story, you implemented some of the basic functions necessary for the game to work correctly. Congrats! You are making good progress!
+In the previous user story, I implemented some of the basic functions necessary for the game to work correctly.
 
-In this user story, you are going to implement the game flow so that a player can start a game and the moles hide and appear randomly using the functions that you created in the previous story.
+In this user story, I implement the game flow so that a player can start a game and the moles hide and appear randomly using the functions that I created in the previous story.
 
 #### 1. `toggleVisibility(hole)`
 
-In the *Selecting elements on the DOM* lesson in the _JavaScript and the DOM_ module, you learned about the `classList()` method. Take some time to review the [classList MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) before you proceed with implementing this function. Previously, you used `classList.add()` and `classList.remove()` to add and remove classes to HTML elements. In this case, you are asked to use `classList.toggle()` so that it adds or removes the `show` class. In the `styles.css` file, notice how the `show` class is used so that the mole class appears in the respective hole:
+In this case, I am asked to use `classList.toggle()` so that it adds or removes the `show` class. In the `styles.css` file, notice how the `show` class is used so that the mole class appears in the respective hole:
 
 ```
 function toggleVisibility(hole){
@@ -207,11 +177,9 @@ function toggleVisibility(hole){
 }
 ```
 
-**Hint:**  If you get stuck, study the  [classList MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) and see how `classList.toggle()` is used in [ this REPL](https://replit.com/@thinkful/chooseHole#script.js).
-
 #### 2. `showAndHide(hole)`
 
-The purpose of this function is to show and hide the mole given a delay time and the hole where the mole is hidden. You'll need to call the `toggleVisibility()` function that you just created. First, call the function so that it adds the `show` class. Then, inside the `setTimeout()`, the `toggleVisibility()` function will also need to be called so that it removes the `show` class. You will also need to set the delay that is given as a parameter. 
+The purpose of this function is to show and hide the mole given a delay time and the hole where the mole is hidden. The `toggleVisibility()` function is called that I just created. First, call the function so that it adds the `show` class. Then, inside the `setTimeout()`, the `toggleVisibility()` function will also need to be called so that it removes the `show` class. Set the delay that is given as a parameter. 
 
 ```js
 function showAndHide(hole, delay){
@@ -225,12 +193,9 @@ function showAndHide(hole, delay){
   return timeoutID;
 }
 ```
-
-**Hint:** Study [this REPL](https://replit.com/@thinkful/showAndHide#script.js) if you get stuck. The REPL has a very similar example that implements the mechanism that you want to implement here. Recall that `setTimeout()` is explained in the _JavaScript and the DOM: Events_ lesson. You can also consult the [`setTimeout()` MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout).
-
 #### 3. `showUp()`
 
-This function simply calls the `showAndHide()` function with a specific delay and hole. The function needs to call `setDelay()` and `chooseHole()` to call `showAndHide(hole, delay)`.
+This function simply calls the `showAndHide()` function with a specific delay and hole. The function calls `setDelay()` and `chooseHole()` to call `showAndHide(hole, delay)`.
 
 ```js
 function showUp() {
@@ -240,13 +205,9 @@ function showUp() {
 }
 ```
 
-**Hint:** Study [this REPL](https://replit.com/@thinkful/showAndHide#script.js) if you get stuck. The REPL has a very similar example that implements the mechanism that you want to implement here.
-
-**Commit your code**: If you've made notable progress, now might be a good time to make a commit to secure your progress.
-
 #### 4. `gameOver()`
 
-The purpose of this function is simply to determine if the game should continue or stop. The game continues if there is still time (`if(time > 0)`). If there is still time, then `showUp()` needs to be called again so that it sets a different delay and a different hole. If there is no more time, then it should call the `stopGame()` function. The function also needs to return the `timeoutId` if the game continues or the string `"game stopped"` if the game is over. You don't need to worry about the time right now. The time will be addressed in US-05.
+The purpose of this function is simply to determine if the game should continue or stop. The game continues if there is still time (`if(time > 0)`). If there is still time, then `showUp()` needs to be called again so that it sets a different delay and a different hole. If there is no more time, then it should call the `stopGame()` function. The function also needs to return the `timeoutId` if the game continues or the string `"game stopped"` if the game is over. The time will be addressed in US-05.
 
 ```js
 function gameOver() {
@@ -258,8 +219,6 @@ function gameOver() {
   //   return gameStopped
 }
 ```
-**Hint:** Study [this REPL](https://replit.com/@thinkful/showAndHide#script.js) if you get stuck. The REPL has a very similar example that implements the mechanism that you want to implement here.
-
 #### 5. `startGame()`
 
 This is the function that starts the game when the `start` button is clicked.
@@ -271,9 +230,7 @@ function startGame(){
   // return "game started";
 }
 ```
-_**Note:** This function is provided to you. You only need to uncomment the code inside the function._
-
-**Commit your code**: If you've made notable progress, now might be a good time to make a commit to secure your progress.
+_**Note:** This function is provided to me.
 
 #### Acceptance criteria
 
@@ -286,11 +243,11 @@ _**Note:** This function is provided to you. You only need to uncomment the code
 
 ## US-04: Whack!
 
-The moles now show and hide, but nothing happens when a user clicks on them. In this user story, you are tasked to implement the functions that handle the clicking events and scoring.
+The moles now show and hide, but nothing happens when a user clicks on them. In this user story, I was tasked to implement the functions that handle the clicking events and scoring.
 
 #### 1. `updateScore()`
 
-This function increments the `points` global variable and updates the scoreboard.  Use the `points` global variable that is already defined and increment it by 1. After the `points` variable is incremented, proceed by updating the scoreboard that you defined in the `index.html` file. To update the scoreboard, you can use `score.textContent = points;`. Use the comments in the following function as a guide for your implementation.
+This function increments the `points` global variable and updates the scoreboard.  Use the `points` global variable that is already defined and increment it by 1. After the `points` variable is incremented, proceed by updating the scoreboard that you defined in the `index.html` file. To update the scoreboard use `score.textContent = points;`. Used the comments in the following function as a guide for my implementation.
 
 ```js
 function updateScore() {
@@ -323,11 +280,9 @@ function whack(event) {
   // return points;
 }
 ```
-**Hint:** Try to implement the solution by yourself and then look at the suggested function implementation in this [REPL](https://replit.com/@thinkful/addEventListeners#script.js). If you don't remember event handlers, you can review the _Event listeners_ lesson from the _JavaScript and the DOM_ module.
-
 #### 4. `setEventListeners(moles)`
 
-You defined an event handler in the previous step. Now, it's time to set the event listeners so that the event handler gets called when a player clicks on a mole.
+I defined an event handler in the previous step. Now, it's time to set the event listeners so that the event handler gets called when a player clicks on a mole.
 
 ```js
 function setEventListeners(){
@@ -336,10 +291,6 @@ function setEventListeners(){
 }
 
 ```
-**Hint:** Try to implement the solution by yourself and then look at the suggested implementation for this function in this [REPL](https://replit.com/@thinkful/addEventListeners#script.js). If you don't remember event listeners, you can review the _Event listeners_ lesson from the _JavaScript and the DOM_ module.
-
-**Commit your code**: If you've made notable progress, now might be a good time to make a commit to secure your progress.
-
 #### Acceptance criteria
 
 1. The score points increment by 1, and the scoreboard is updated when `updateScore()` is called.
@@ -349,7 +300,7 @@ function setEventListeners(){
 
 ## US-05: Timer
 
-The game needs a timer that informs the player how many seconds they have left. You'll need to use `setInterval()` to create a timer. If you need to, go back and review the `setInterval()` function in the _JavaScript and the DOM: Events_ lesson.  You may also use the functions provided in [this REPL](https://replit.com/@thinkful/timer#script.js).
+The game needs a timer that informs the player how many seconds they have left. I've used `setInterval()` to create a timer. 
 
 #### 1. `startTimer()`
 
@@ -361,8 +312,6 @@ function startTimer() {
   return timer;
 }
 ```
-
-_**Note:** This is the same function that's provided in [this REPL](https://replit.com/@thinkful/timer#script.js)._
 
 #### 2. `updateTimer()`
 
@@ -377,10 +326,6 @@ function updateTimer() {
   return time;
 }
 ```
-_**Note:** This is the same function that's provided in  [this REPL](https://replit.com/@thinkful/timer#script.js)._
-
-**Commit your code**: If you've made notable progress, now might be a good time to make a commit to secure your progress.
-
 #### Acceptance criteria
 
 1. `startTimer()` and `updateTimer()` work as expected.
@@ -389,37 +334,32 @@ _**Note:** This is the same function that's provided in  [this REPL](https://rep
 
 ## US-06: Originality
 
-Good job making it this far! 
-
-You have a functional game, and now it's time to enhance it with your creativity and originality. This step is crucial, not just for the satisfaction of making something unique but also because potential employers and collaborators will be looking at your work. Your ability to innovate and personalize projects is highly valued in the tech industry, as it showcases your problem-solving skills, creativity, and attention to detail. Let's make your game stand out!
+My ability to innovate and personalize projects is highly valued in the tech industry, as it showcases my problem-solving skills, creativity, and attention to detail. Here's why my game stands out!
 
 Read the following suggestions and implement whatever you want. There are no unit tests for this user story, but originality will be considered in the rubric.
 
 #### 1. Change the look of the game.
 
-The game looks great, but it looks similar to the games of some  other students in the program. Hack the `styles.css` file and make some changes to make your game look unique. You can change the background, the sprites, the fonts, and the general appearance of the game. Why not use zombies or monsters instead of moles? Study  and experiment with `styles.css` and see what you can come up with.
+The game looks great, but it looks similar to the games of some  other students in the program. I hacked the `styles.css` file and made some changes to make my game look unique. 
+
+I changed the background, the sprites, the fonts, and the general appearance of the game. 
+
+I use monsters instead of moles? 
 
 #### 2. Audio FX and music
 
-A game without sound FX and music can be pretty boring. Here is a [REPL](https://replit.com/@thinkful/audiofx-and-music#script.js) with an example of how to add audio to your game. Feel free to use your own audio files.
+A game without sound FX and music can be pretty boring. I added audio files to play a song during game play and a hit noise with the click.
 
-#### 3. Additional features
 
-You can add additional features to your game. Here are some examples: adding more user controls to control difficulty, adding a sprite that takes off points if it gets hit, or adding additional animations.
-
-**Commit your code**: If you've made notable progress, now might be a good time to make a commit to secure your progress.
-
-#### Acceptance criteria
-
-1. There are no unit tests for this user story, but originality and creativity will be considered in the rubric. Consider implementing at least one of the suggested options listed above.
 
 ## US-07: Deploying to GitHub
+[Website-GameLink](https://diamonddevelop.github.io/whack-a-monster/) 
+[GitHubRepo](https://github.com/DiamondDevelop/whack-a-monster)
 
-You made it! You finished the first version of your game. Now, it's time to show it to the world so that your friends and potential employers can look at your work. Follow the instructions in the *Git and GitHub* module to deploy your game so that it becomes part of your portfolio.
 
 #### Acceptance criteria
 
-1. The project is deployed to GitHub.
+1. The project is deployed to GitHub. 
 
 # Success criteria
 
@@ -433,8 +373,30 @@ General code organization:
 - Minimal code duplication
 - Comments are used to describe the functions.
 
-# Tips
+# Fun Conspiracy Theory 
+In a forgotten corner of Bridgeton, Missouri, lies the **West Lake Landfill**—a place shrouded in mystery and danger. Once a limestone quarry, it transformed into an unlined mixed-waste landfill in the 1950s. But this wasn't just any landfill; it harbored secrets that would alter the fate of our creature.
 
-- Start by completing the required HTML elements and then proceed to work on the JavaScript functions. It's recommended that you leave any CSS changes for last. Follow the order of the user stories.
-- If you are stuck, take a careful look at the provided resources. If you are still stuck, ask a friend or a mentor for help.
-- Read the user stories and tests carefully.
+**Radioactive Waste Origins:**
+Decades ago, during the height of scientific experimentation, the **Mallinckrodt Chemical Works** played a role in the Manhattan Project and nuclear weapons production. Among their byproducts was **leached barium sulfate**, a material with low relative radioactivity. Illegally, this radioactive waste found its way to West Lake Landfill, where it mingled with 39,000 tons of topsoil, diluting the contamination.
+
+**The Transformation:**
+As the waste seeped into the earth, it altered the very fabric of the land. The once-vibrant soil turned sickly, and the groundwater absorbed its toxic essence. Our creature, unbeknownst to it, emerged from this tainted ground—a fusion of nature and radiation.
+
+**The Creature's Birth:**
+Its fuzzy form took shape, its stripes mirroring the layers of contaminated soil. Antennas sprouted from its head, sensing the unseen energies that permeated the air. It burrowed deeper, seeking refuge from the harsh surface—a place where no other creature dared tread.
+
+**The Glow of Mutation:**
+The radioactive glow infused its cells, granting it resilience and an otherworldly hue. Its eyes, once ordinary, now shimmered with an eerie light. The creature adapted, finding sustenance in the mutated fungi and roots that thrived on the landfill's fringes.
+
+**A Toxic Home:**
+Our creature's burrow became its sanctuary—a cocoon of survival. The ground above crackled with unseen energy, and the air tasted of decay. Yet, it thrived, its fuzzy body absorbing the very essence of its surroundings.
+
+And so, our underground dweller—born from waste, shaped by radiation—explores its subterranean world. Its existence a testament to resilience, a reminder that even in the bleakest of landscapes, life persists. 🌱🌸🐛
+
+Some cited information for Fun Conspiracy Theory:
+(1) West Lake Landfill - Wikipedia. (https://en.wikipedia.org/wiki/West_Lake_Landfill).
+(2) Radioactive 'Tomb' in Pacific Filled With Nuclear Waste Is Starting to .... (https://www.sciencealert.com/a-tomb-in-the-marshall-islands-contains-a-huge-amount-of-radioactive-waste).
+(3) Radioactive Waste on Skull Valley Goshute Indian Reservation, USA. (https://ejatlas.org/conflict/radioactive-waste-on-skull-valley-goshute-indian-reservation-usa).
+
+
+
