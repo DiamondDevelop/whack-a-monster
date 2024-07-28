@@ -135,15 +135,15 @@ function showUp() {
 * the timeoutID
 *
 */
-function showAndHide(hole, delay) {
-  let timeoutID = setTimeout(() => {
+  function showAndHide(hole, delay) {
     toggleVisibility(hole);
-    gameOver();
-  }, delay);
-
-  return timeoutID;
-}
-
+    let timeoutID = setTimeout(() => {
+      toggleVisibility(hole);
+      gameOver();
+    }, delay);
+  
+    return timeoutID;
+  }
 /**
 *
 * Adds or removes the 'show' class that is defined in styles.css to 
