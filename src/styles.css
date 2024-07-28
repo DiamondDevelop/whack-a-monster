@@ -1,3 +1,5 @@
+
+/*this sets style for the entire html page*/
 html {
   background: url('../assets/background2.png') no-repeat center center fixed;*/
   /*background: url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/background.png?raw=true') no-repeat center center fixed;*/
@@ -10,7 +12,7 @@ html {
   overflow: hidden;
   justify-content: center;
 }
-
+/*this adds style to the h1 element*/
 h1 {
   text-align: center;
   font-size: 55px;
@@ -26,7 +28,7 @@ h1 {
   background-color: rgb(0 0 0 / 50%);
   border-radius: 20px;
 }
-
+/*this adds style to the h2 element*/
 h2 {
   text-align: center;
   justify-content: center;
@@ -38,25 +40,35 @@ h2 {
   -webkit-text-stroke: 3px black;
 line-height: 0px;
 }
-
+/*this adds style to the start button
+centers the text, makes the text 30 px, 
+makes the border of start button round/40 px,
+sets color to white and background color pink*/
 #start {
     text-align: center;
     font-size: 30px;
     border-radius: 40px;
-    color: rgb(40, 212, 43);
+    color: white;
     background-color: rgb(235, 78, 133);
 }
 
-
+/*adds style to timer. make timer font large/50px*/
 #timer{
     color: rgb(239, 14, 14);
     font-size: 50px;
 }
-
+/*makes score number pink*/
 #score{
   color:rgb(255, 0, 136);
 }
 
+/*allows width of hole and mole layout to be
+600px wide, 400px tall, changes from default box
+and makes it flex for even distribution
+wraps content and sets margin,
+
+also allows the radio mallet to show in place of
+cursor*/
 .grid {
   width: 600px;
   height: 400px;
@@ -65,13 +77,17 @@ line-height: 0px;
   margin: 0 auto;
   cursor: url('../assets/radio-mallet.png'), pointer;
 }
-
+/* changes hole appearance and hides over flow for 
+visual pleasentness. makes position relative in layout*/
 .hole {
   flex: 1 0 33.33%;
  overflow: hidden;
   position: relative;
 }
 
+/*rules for after hole class. sets width and height to 100 percent
+sets the background to personal hole 
+makes position absolute and sets pointer event to none*/
 .hole:after {
   display: block;
   background: url("../assets/hole.png") bottom center no-repeat;
@@ -85,7 +101,10 @@ line-height: 0px;
   z-index: 2;
   pointer-events:none;
 }
-
+/*sets mole to personal monster image 
+made the image size larger to 70 percent
+make position absolute with 100 percent heigh, width and top
+transform transition*/
 .mole {
   background:url('../assets/mole2.png') bottom center no-repeat;
  /* background:url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/mole.png?raw=true') bottom center no-repeat;*/
@@ -99,11 +118,14 @@ line-height: 0px;
   pointer-events:auto;
 }
 
+
+/*sets z index to 3 for hole show selector*/
 .hole.show {
   z-index: 2;
 }
-
+/*for hole show mole selector set top to 0 and
+transform scald 1.1*/
 .hole.show .mole {
-  top: 0;
+ top: 0;
  transform: scale(1.1);
 }

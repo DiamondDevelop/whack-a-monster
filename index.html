@@ -9,24 +9,32 @@
 
 
   <body>
+    <!--This is code includes the game song-->
     <audio id="molesong" src="./assets/molesong.mp3"></audio>
+    <!--This code includes the whack/hit sound -->
     <audio id="hit" src="./assets/hit.mp3"></audio>
     <div>
 
-      //
+      <!--this is the title of the game-->
       <h1 id="title">whack-a-monster</h1>
       <div>
-        <h2>Click <button id='start'>start</button> to play!</h2>
+        <!--this start button will start the game
+        it assigns an id selector for style and 
+        javascript function to start game-->
+      <h2>Click <button type="button" id='start'>start</button> to play!</h2>
       </div>
-
+ <!--this div span holds an id selector for the score
+ it assigns the score inside the h2 element -->
       <div>
         <h2>score: <span id="score">0</span></h2>
       </div>
-
+ <!--this div span holds an id selector for the timer
+ it assigns the score inside the h2 element -->
       <div>
           <h2><span id="timer">0</span> seconds left.</h2>
       </div>
-
+<!--this creates the grid layout for the holes and moles
+the grid divides the hole and moles into seperate divs-->
     <div class="grid">
       <div id="hole0" class="hole">
         <div id="mole0" class="mole"></div>
