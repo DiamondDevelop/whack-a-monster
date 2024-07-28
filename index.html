@@ -7,6 +7,11 @@
     <title>whack-a-monster</title>
   </head>
 
+   <!--A special note to the reader. Thanks you for being here...
+  This code follows a strict story adherence.
+  It can be located in the original Github.com repo read me
+  Let my code be clean and let it be reusable, enjoy!-->
+
 
   <body>
     <!--This is code includes the game song-->
@@ -15,12 +20,17 @@
     <audio id="hit" src="./assets/hit.mp3"></audio>
     <div>
 
+       <!--US 01:1 Basic game structure
+    ADD STRING OF "title" ID ATTRIBUTE IN h1 tag
+    with original game name-->
+
       <!--this is the title of the game-->
       <h1 id="title">whack-a-monster</h1>
       <div>
-        <!--this start button will start the game
-        it assigns an id selector for style and 
-        javascript function to start game-->
+       <!-- US01:3 Basic game structure
+         a button tag with start set as the id.
+        a start button so that a player can start
+         playing the game-->
       <h2>Click <button type="button" id='start'>start</button> to play!</h2>
       </div>
  <!--this div span holds an id selector for the score
@@ -44,7 +54,8 @@ the grid divides the hole and moles into seperate divs-->
       <div id="hole1" class="hole">
         <div id="mole1" class="mole"></div>
       </div>
-
+<!--US 01:2 Basic game structure
+      ADDED ADDITIONAL HOLES-->
 
       <!--Added the missing holes and moles. -->
         <div id="hole2" class="hole">
