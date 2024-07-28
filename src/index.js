@@ -1,3 +1,13 @@
+/**A special note to the reader. Thanks you for being here...
+This code follows a strict story adherence.
+It can be located in the original Github.com repo read me
+Let my code be clean and let it be reusable, enjoy!
+*/
+
+
+// TODO: Add the missing query selectors:
+// US01:4 Basic game structure
+//additional query's were made to retrieve the score and timer elements
 // these query selectors target 
 const holes = document.querySelectorAll('.hole');
 const moles = document.querySelectorAll('.mole');
@@ -23,7 +33,12 @@ let difficulty ="hard"
  * will return a random integer between 10 and 200.
  *
  */
-
+/**US2:01 Basic game functionality: Randomness
+ * The moles (or other chosen entity) 
+ * need to appear and disappear randomly.
+ * this will be a global function to define
+ * a random number
+ */
 function randomInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -43,6 +58,14 @@ function randomInteger(min, max) {
  * setDelay("hard") //> returns 856 (returns a random number between 600 and 1200).
  *
  */
+
+/* US02:02 Basic game functionality: Randomness
+* The moles need to appear and disappear at
+* a certain interval of time. The function takes a difficulty parameter 
+* that can have three values: easy, normal, or hard. 
+* The function is described in the comment above.
+* I call this Time delay for Gamer levels
+*/
 function setDelay(difficulty) {
   // my code here.
     if (difficulty === "easy") {
@@ -67,6 +90,13 @@ function setDelay(difficulty) {
  * Example: 
  * const holes = document.querySelectorAll('.hole');
  * chooseHole(holes) //> returns one of the 9 holes that you defined */
+
+
+ /** US02:03 Basic game functionality: Randomness
+ * This function should select a random hole 
+ * from the list of holes that I defined. 
+ * When function is called, it will make sure 
+ * that it doesn't return the last hole. */
 
 function chooseHole(holes) {
   // my code here.
@@ -101,6 +131,12 @@ let hole = chooseHole(holes);
 *  //   return gameStopped
 *
 */
+
+
+/**US03:04 Game flow
+ * determines if game should continue or stop
+ * it is described in detail in comment above
+ */
 function gameOver() {
   // my code here
   if (time > 0){
@@ -122,6 +158,11 @@ return gameStopped;
 *
 */
 
+/**US03:03 Game flow
+ * this calls the showAndHide() function
+ * grabs specific delay and hole
+ */
+
 function showUp() {
   let delay = setDelay(difficulty); // TODO: Update so that it uses setDelay()
   const hole = chooseHole(holes);  // TODO: Update so that it use chooseHole()
@@ -135,6 +176,14 @@ function showUp() {
 * the timeoutID
 *
 */
+
+/**US03:02 Game flow
+ * toggleVisibility() function is called
+ * it adds the show class
+ * inside the setTimeout(), the toggleVisibility() function 
+ * will also be called so that it removes the show class. 
+ * the delay that is given as a parameter is set.
+ */
   function showAndHide(hole, delay) {
     toggleVisibility(hole);
     let timeoutID = setTimeout(() => {
@@ -150,6 +199,14 @@ function showUp() {
 * a given hole. It returns the hole.
 *
 */
+
+/**US-03:01 - Game flow
+ * uses classList.toggle() method to remove or add css show class
+ * game flow so that a player can start a game and the moles 
+ * hide and appear randomly using the functions in the previous 
+ * story. show class is used so that the mole class appears 
+ * in the respective hole
+ */
 function toggleVisibility(hole){
   // add hole.classList.toggle so that it adds or removes the 'show' class.
   hole.classList.toggle("show");
@@ -166,6 +223,11 @@ function toggleVisibility(hole){
 * for your implementation:
 *
 */
+
+/**US04:01 Whack!
+ * function is described above
+ * a condition was added to ensure game is not over so people can't cheat
+ */
 function updateScore() {
   // my code here
   points++;
@@ -180,6 +242,11 @@ function updateScore() {
 * the points.
 *
 */
+
+/**US04:02 Whack!
+ * used to set points back to 0
+ * end user can try again
+ */
 function clearScore() {
   // my code here
   points = 0;
@@ -192,6 +259,10 @@ function clearScore() {
 * Updates the control board with the timer if time > 0
 *
 */
+
+/**US05:02 Timer
+ * keeps the timer going on game
+ */
 function updateTimer() {
   // my code here.
   if (time > 0){
@@ -207,6 +278,11 @@ function updateTimer() {
 * the updateTimer function get called. This function is already implemented
 *
 */
+
+/**US05:01 Timer
+ * function described above
+ * this will inform player how many seconds are left
+ */
 function startTimer() {
   // my code here
   timer = setInterval(updateTimer, 1000);
@@ -221,6 +297,13 @@ function startTimer() {
 * the moles.
 *
 */
+
+/**US04:03 Whack!
+ * access mole with DOM
+ * so when it's clicked 
+ * it calls the score
+ * then adds points
+ */
 function whack(event) {
   // my code here.
   setEventListeners();
@@ -233,6 +316,11 @@ function whack(event) {
 *
 * Adds the 'click' event listeners to the moles. See the instructions
 * for an example on how to set event listeners using a for loop.
+*/
+
+/**US04:04 Whack!
+ * set the event listeners so that the event handler gets called when a player clicks on a mole
+* Adds the 'click' event listeners to the moles. 
 */
 function setEventListeners(){
   // my code here
@@ -280,6 +368,12 @@ document.getElementById('start').addEventListener('click', function() {
 * is clicked.
 *
 */
+
+/**US03:05 Game flow
+ * this function was provided
+ * it runs game for 10 seconds
+ * and calls for monsters... BOO!
+ */
 function startGame(){
   setEventListeners();
   startTimer();
