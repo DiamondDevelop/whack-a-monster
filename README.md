@@ -336,7 +336,6 @@ function updateTimer() {
 
 My ability to innovate and personalize projects is highly valued in the tech industry, as it showcases my problem-solving skills, creativity, and attention to detail. Here's why my game stands out!
 
-Read the following suggestions and implement whatever you want. There are no unit tests for this user story, but originality will be considered in the rubric.
 
 #### 1. Change the look of the game.
 
@@ -344,7 +343,7 @@ The game looks great, but it looks similar to the games of some  other students 
 
 I changed the background, the sprites, the fonts, and the general appearance of the game. 
 
-I use monsters instead of moles? 
+I use monsters instead of moles
 
 #### 2. Audio FX and music
 
